@@ -49,6 +49,7 @@ if (!scanned) {
   if (savedPassword === password) {
     showMessage('Contraseña correcta, formulario desbloqueado', 'success');
     document.getElementById("btn-save").removeAttribute("disabled");
+    document.getElementById("btn-qr").remove()
   } else {
     showMessage('Contraseña incorrecta, vuelva a intentarlo', 'danger');
     document.getElementById("btn-save").setAttribute("disabled", "disabled");

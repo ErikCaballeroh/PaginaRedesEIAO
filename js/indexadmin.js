@@ -18,7 +18,7 @@ let id = ""
 window.addEventListener('DOMContentLoaded', async () => {
 
   const uid = await getUserUid()
-  if(uid === "joUje8YZRQZjYJreYE3Bla0vpsl2"){
+  if((uid === "joUje8YZRQZjYJreYE3Bla0vpsl2") || (uid === "szPXJhD8bWQgGUdBfuwKvffKOQI2")){
     onGetOrders((querySnapshot) => {
       let html = ''
       querySnapshot.forEach(doc => {
